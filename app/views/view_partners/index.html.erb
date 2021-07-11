@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>View Partners</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Profile</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @view_partners.each do |view_partner| %>
+      <tr>
+        <td><%= view_partner.first_name %></td>
+        <td><%= view_partner.last_name %></td>
+        <td><%= link_to 'Show', view_partner %></td>
+        <td><%= link_to 'Message', "conversation#index" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New View Partner', new_view_partner_path %>

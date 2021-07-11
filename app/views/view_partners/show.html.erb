@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @view_partner.first_name %>
+</p>
+
+
+<p>
+  <strong>Last name:</strong>
+  <%= @view_partner.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_view_partner_path(@view_partner) %> |
+<%= link_to 'Back', view_partners_path %>

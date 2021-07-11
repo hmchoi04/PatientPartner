@@ -1,0 +1,2 @@
+class ViewPartner < ApplicationRecord
+end
